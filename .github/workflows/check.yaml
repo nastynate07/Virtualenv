@@ -101,7 +101,7 @@ jobs:
       # https://github.com/actions/setup-python/issues/771
       - name: Setup python for test ${{ matrix.py }}
         if: endsWith(matrix.py, 't')
-        uses: quansight-labs/setup-python@v5.3.1
+        uses: quansight-labs/setup-python@v5.4.0
         with:
           python-version: ${{ matrix.py }}
       - name: Pick environment to run
